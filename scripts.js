@@ -68,6 +68,15 @@ function checkWinner() {
 }
 
 // Event listeners for button clicks
-btn.addEventListener('click', () => playRound('rock', getComputerChoice()));
-btn2.addEventListener('click', () => playRound('paper', getComputerChoice()));
-btn3.addEventListener('click', () => playRound('scissors', getComputerChoice()));
+// Event listeners for button clicks
+btn.addEventListener('click', function() {
+  playRound('rock', getComputerChoice());
+});
+
+btn2.addEventListener('click', function() {
+  playRound('paper', getComputerChoice());
+});
+
+btn3.addEventListener('click', function() {
+  playRound('scissors', getComputerChoice());
+});
